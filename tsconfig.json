@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "Node16",
+        "target": "ES2020",
+        "moduleResolution": "node16",
+        "lib": [
+            "es2020",
+            "dom"
+        ],
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.mts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
