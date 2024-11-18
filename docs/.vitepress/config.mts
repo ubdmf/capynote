@@ -4,7 +4,7 @@ import { sidebar } from "../../src/utils/generateSidebar.mts";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "capynote",
+  base: "/capynote/",
   title: "午羊的智能笔记",
   description: "探索 AI、大模型和编程世界",
   head: [["link", { rel: "icon", href: "/aibotlogo.ico" }]],
