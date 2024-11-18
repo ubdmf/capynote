@@ -48,10 +48,6 @@ jobs:
       - name: Build documentation
         run: pnpm run docs:build
 
-      # Preview documentation
-      - name: Preview documentation
-        run: pnpm run docs:preview
-
       # Optionally, you can add more steps for testing, linting, etc.
       # - name: Run tests
       #   run: pnpm test
