@@ -68,9 +68,7 @@ function generateListContent(
 ): string {
   let content = `# 目录\n\n`;
   markdownFiles.forEach((file, index) => {
-    content += `${index + 1}. [${file.data} 日报 ${file.title}](${
-      file.link
-    })\n`;
+    content += `${index + 1}. [${file.data} ${file.title}](${file.link})\n`;
   });
   return content;
 }

@@ -11,6 +11,7 @@ export default defineConfig({
   appearance: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    outline: "deep",
     logo: "/aibotlogo.webp",
     search: {
       provider: "local", // 使用本地搜索
@@ -25,6 +26,6 @@ export default defineConfig({
     footer: {
       message: "Released under the MIT License.",
       copyright: "Copyright © capykyo 2023",
-    }
+    },
   },
 });

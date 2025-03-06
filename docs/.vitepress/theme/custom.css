@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'LXGW WenKai';
+  src: url('/font/LXGWWenKai-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
@@ -11,4 +19,10 @@
     #47caff 50%
   );
   --vp-home-hero-image-filter: blur(44px);
+  
+  --lxgw-font: 'LXGW WenKai', sans-serif;
+}
+
+body {
+  font-family: var(--lxgw-font);
 }
