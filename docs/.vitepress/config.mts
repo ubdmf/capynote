@@ -5,9 +5,9 @@ import { sidebar } from "../../src/utils/generateSidebar.mts";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/capynote/",
-  title: "午羊的智能笔记",
-  description: "探索 AI、大模型和编程世界",
-  head: [["link", { rel: "icon", href: "/aibotlogo.ico" }]],
+  title: "午羊的记事本",
+  description: "AI 时代的个人知识库",
+  head: [["link", { rel: "icon", href: "/capynote/aibotlogo.ico" }]],
   appearance: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
