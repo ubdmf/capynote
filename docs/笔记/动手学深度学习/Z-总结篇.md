@@ -1,12 +1,12 @@
 ---
 layout: doc
 title: 动手学深度学习 Road Map
-description:
+description: 动手学深度学习 Road Map
 data: 2025-03-06
 head:
   - - meta
     - name: keywords
-      content:
+      content: 动手学深度学习, 深度学习, 李沐, 动手学大模型
 ---
 
 # 动手学深度学习 Road Map
