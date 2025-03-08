@@ -29,6 +29,7 @@ body {
 
 /* 重要信息 - 突出显示关键内容 */
 .important {
+  display: inline-block;
   background-color: #ffebee;
   color: #c62828;
   border-left: 4px solid #c62828;
@@ -36,13 +37,26 @@ body {
   margin: 16px 0;
 }
 
+.dark .important {
+  background-color: #c62828; /* 暗模式背景色 */
+  color: #ffebee; /* 暗模式文字颜色 */
+  border-left: 4px solid #ffebee;
+}
+
 /* 补充信息 - 为主要内容提供额外上下文 */
 .supplementary {
+  display: inline-block;
   background-color: #e8f5e9;
   color: #2e7d32;
   border-left: 4px solid #2e7d32;
   padding: 12px 16px;
-  margin: 16px 0;
+  margin: 2px 0;
+}
+
+.dark .supplementary {
+  background-color: #2e7d32; /* 暗模式背景色 */
+  color: #e8f5e9; /* 暗模式文字颜色 */
+  border-left: 4px solid #e8f5e9;
 }
 
 /* 提示信息 - 提供有用建议或小技巧 */
@@ -54,82 +68,95 @@ body {
   margin: 16px 0;
 }
 
+.dark .tip {
+  background-color: #1565c0; /* 暗模式背景色 */
+  color: #e3f2fd; /* 暗模式文字颜色 */
+  border-left: 4px solid #e3f2fd;
+}
+
 /* 警告信息 - 强调潜在问题或需要注意的风险 */
 .warning {
-  /* background-color: #fff3e0; */
   color: #e65100;
-  /* border-left: 4px solid #e65100;
-  padding: 12px 16px;
-  margin: 16px 0; */
+}
+
+.dark .warning {
+  color: #ffb74d; /* 暗模式文字颜色 */
 }
 
 /* 错误信息 - 标识错误或不应该遵循的做法 */
 .error {
-  /* background-color: #ffcdd2; */
   color: #b71c1c;
-  /* border-left: 4px solid #b71c1c;
-  padding: 12px 16px;
-  margin: 16px 0; */
+}
+
+.dark .error {
+  color: #ef5350; /* 暗模式文字颜色 */
 }
 
 /* 成功信息 - 标识正确做法或成功结果 */
 .success {
-  /* background-color: #c8e6c9; */
   color: #1b5e20;
-  /* border-left: 4px solid #1b5e20;
-  padding: 12px 16px;
-  margin: 16px 0; */
+}
+
+.dark .success {
+  color: #66bb6a; /* 暗模式文字颜色 */
 }
 
 /* 示例信息 - 提供实例说明 */
 .example {
-  /* background-color: #f3e5f5; */
   color: #6a1b9a;
-  /* border-left: 4px solid #6a1b9a;
-  padding: 12px 16px;
-  margin: 16px 0; */
+}
+
+.dark .example {
+  color: #ab47bc; /* 暗模式文字颜色 */
 }
 
 /* 定义信息 - 术语解释或概念定义 */
 .definition {
-  /* background-color: #e0f7fa; */
   color: #00838f;
-  /* border-left: 4px solid #00838f;
-  padding: 12px 16px;
-  margin: 16px 0; */
+}
+
+.dark .definition {
+  color: #4db6ac; /* 暗模式文字颜色 */
 }
 
 /* 引用信息 - 引述文献或他人观点 */
 .quote {
-  /* background-color: #f5f5f5; */
-  color: #424242;
-  /* border-left: 4px solid #9e9e9e; */
   font-style: italic;
-  /* padding: 12px 16px;
-  margin: 16px 0; */
+  color: #424242;
+}
+
+.dark .quote {
+  color: #b0bec5; /* 暗模式文字颜色 */
 }
 
 /* 注意信息 - 一般需要注意的事项 */
 .note {
-  /* background-color: #e8eaf6; */
   color: #3949ab;
-  /* border-left: 4px solid #3949ab;
-  padding: 12px 16px;
-  margin: 16px 0; */
+}
+
+.dark .note {
+  color: #bbdefb; /* 暗模式文字颜色 */
 }
 
 /* 关键词标签 - 突出显示关键术语 */
 .keyword {
   display: inline-block;
-  /* background-color: #eceff1; */
   color: #455a64;
   border-radius: 4px;
   padding: 2px 6px;
   font-weight: 500;
 }
 
+.dark .keyword {
+  color: #cfd8dc; /* 暗模式文字颜色 */
+}
+
 .warning_underline {
   border-bottom: 1px solid #e65100;
+}
+
+.dark .warning_underline {
+  border-bottom: 1px solid #ffb74d;
 }
 
 .text-center {
@@ -138,12 +165,43 @@ body {
 
 
 
+
 .vp-doc table {
-  display: inline-block; /* 改为 inline-block 以便居中 */
+  display: inline-block; 
   border-collapse: collapse;
   margin: 20px auto; /* 上下 20px，左右自动居中 */
   overflow-x: auto; /* 保持横向滚动 */
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  overflow-x: visible;
+}
+
+.vp-doc table thead {
+  position: sticky;
+  top: 64px; /* 根据您的导航栏高度调整此值 */
+  z-index: 10;
+  background-color: #fff; /* 确保表头有背景色 */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+/* 媒体查询：当屏幕宽度小于 960px 时，设置 top 为 47px */
+@media (max-width: 959px) {
+  .vp-doc table thead {
+    top: 47px; /* 小屏幕时的值 */
+  }
+}
+
+/* 媒体查询：当屏幕宽度在 960px 和 1280px 之间时，设置 top 为 64 + 47px */
+@media (max-width: 1279px) and (min-width: 960px) {
+  .vp-doc table thead {
+    top: 111px; /* 小屏幕时的值 */
+  }
+}
+
+/* 媒体查询：当屏幕宽度大于 1280px 时，设置 top 为 64px */
+@media (min-width: 1280px) {
+  .vp-doc table thead {
+    top: 64px; /* 小屏幕时的值 */
+  }
 }
