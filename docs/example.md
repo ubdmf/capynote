@@ -71,3 +71,9 @@ console.log(greet("World")); // 输出: Hello, World!
 3. **代码示例**：提供了一个简单的 JavaScript 函数示例，展示代码块的使用。
 4. **图像示例**：添加了一个占位图像，展示如何插入图像。
 5. **结论**：总结了文档的内容，并提供了指向官方文档的链接。
+
+### 常用 prompt
+
+- `转换为markdow表格`
+
+- `转化为markdown的形式，重点标记的地方都使用<sapn class="warning"></sapn>标签代替** **`
