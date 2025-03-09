@@ -159,6 +159,7 @@ body {
   border-bottom: 1px solid #ffb74d;
 }
 
+/* 文字需要居中时使用，一般用于p标签 */
 .text-center {
   text-align: center;
 }

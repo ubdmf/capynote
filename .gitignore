@@ -4,3 +4,6 @@ dist
 node_modules
 .vscode
 ./pnpm-lock.yaml
+codefetch
+prompt.md
+.cursor
