@@ -14,11 +14,11 @@ const clickHandler = (e) => {
 
   // 获取被点击的 .detail 元素
   let definition = e.target.parentElement.querySelector('.detail');
-  if (!definition) {
-    definition = e.target.parentElement
-  }
-  if (definition) {
-    definition.style.opacity = 1
+
+  if (definition && definition.className === 'detail') {
+    console.log(definition.style.opacity);
+    
+    definition.style.opacity = definition.style.opacity == 0 ? 1 : 0
   }
 }
 
@@ -31,7 +31,7 @@ const showDetail = () => {
 <button @click="showDetail">显示 / 隐藏</button>
 
 <div class="study-framework">
-    <div class="title" v-for="item in items" :key="item.id" @click="clickHandler">
+    <div class="title" v-for="item in items" :key="item.id" @click.stop="clickHandler">
       <h2>{{ item.id }} {{ item.name }}</h2>
       <ul v-if="item.children && item.children.length">
         <li v-for="child in item.children" :key="child.id">
@@ -74,5 +74,6 @@ const showDetail = () => {
 }
 .study-framework .detail {
   margin-left: 10px;
+  transition: opacity 0.3s ease-in-out;
 }
 </style>
