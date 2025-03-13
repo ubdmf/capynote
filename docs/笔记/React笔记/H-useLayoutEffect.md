@@ -2,7 +2,7 @@
 layout: doc
 title: useLayoutEffect
 description: useLayoutEffect 是 React 中用于处理副作用的钩子，用于浏览器重新绘制屏幕之前执行，可以获取到 DOM 信息，并且可以修改 DOM 信息。
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

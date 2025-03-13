@@ -2,7 +2,7 @@
 layout: doc
 title: React 闭包陷阱
 description: 本文探讨了在 React 中使用 EventSource 时遇到的闭包陷阱问题，分析了其原因，并提供了多种解决方案，以帮助开发者更好地管理状态更新和事件处理。
-data: "2025-03-01"
+date: "2025-03-01"
 head:
   - - meta
     - name: keywords

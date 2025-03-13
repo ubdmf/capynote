@@ -2,7 +2,7 @@
 layout: doc
 title: Cursor不完全使用指北
 description: 深入浅出的Cursor AI编程助手使用指南，涵盖基础配置、核心功能、使用技巧及最佳实践
-data: 2025-03-09
+date: 2025-03-09
 head:
   - - meta
     - name: keywords

@@ -2,7 +2,7 @@
 layout: doc
 title: React 组件
 description: 组件传值，父子组件通信，兄弟组件通信
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

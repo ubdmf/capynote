@@ -30,9 +30,9 @@ function formatDate(dateString: string): string {
  */
 function getMarkdownFilesWithFrontmatter(
   dirPath: string
-): { title: string; data: string; link: string }[] {
+): { title: string; date: string; link: string }[] {
   const files = fs.readdirSync(dirPath, { withFileTypes: true });
-  const markdownFiles: { title: string; data: string; link: string }[] = [];
+  const markdownFiles: { title: string; date: string; link: string }[] = [];
 
   files.forEach((file) => {
     if (file.isFile() && file.name.endsWith(".md") && file.name !== "list.md") {
@@ -40,10 +40,10 @@ function getMarkdownFilesWithFrontmatter(
       const fileContent = fs.readFileSync(filePath, "utf-8");
       const { data } = matter(fileContent);
 
-      if (data.title && data.data) {
+      if (data.title && data.date) {
         markdownFiles.push({
           title: data.title,
-          data: formatDate(data.data), // 使用 formatDate 格式化日期
+          date: formatDate(data.date), // 使用 formatDate 格式化日期
           link: `./${file.name}`,
         });
       }
@@ -52,7 +52,7 @@ function getMarkdownFilesWithFrontmatter(
 
   // 根据日期排序
   markdownFiles.sort(
-    (a, b) => new Date(b.data).getTime() - new Date(a.data).getTime()
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
   return markdownFiles;
@@ -64,11 +64,11 @@ function getMarkdownFilesWithFrontmatter(
  * @returns 生成的 Markdown 内容
  */
 function generateListContent(
-  markdownFiles: { title: string; data: string; link: string }[]
+  markdownFiles: { title: string; date: string; link: string }[]
 ): string {
   let content = `# 目录\n\n`;
   markdownFiles.forEach((file, index) => {
-    content += `${index + 1}. [${file.data} ${file.title}](${file.link})\n`;
+    content += `${index + 1}. [${file.date} ${file.title}](${file.link})\n`;
   });
   return content;
 }

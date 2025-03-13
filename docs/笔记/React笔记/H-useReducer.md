@@ -2,7 +2,7 @@
 layout: doc
 title: useReducer
 description: useReducer 是 React 中用于管理状态的 Hook，可以方便的创建和管理状态。
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

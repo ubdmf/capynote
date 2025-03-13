@@ -2,7 +2,7 @@
 layout: doc
 title: useSyncExternalStore
 description: useSyncExternalStore 是 React 中用于从组件外部存储（例如状态管理库、浏览器 API）获取状态并在组件中同步显示的 Hook。
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

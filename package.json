@@ -9,6 +9,6 @@
     "docs:dev": "pnpm run generate:lists && vitepress dev docs",
     "docs:build": "pnpm run generate:lists && vitepress build docs",
     "docs:preview": "pnpm run generate:lists && vitepress preview docs",
-    "generate:lists": "pnpm exec tsc && node dist/generate-list.mjs"
+    "generate:lists": "pnpm exec tsc && node dist/generate-list.mjs && node dist/generateIndexList.mjs"
   }
 }

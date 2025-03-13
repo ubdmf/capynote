@@ -2,7 +2,7 @@
 layout: doc
 title: useEffect
 description: useEffect 是 React 中用于处理副作用的钩子，可以方便地执行副作用函数，类似于之前类组件中的 `componentDidMount`、`componentDidUpdate`、`componentWillUnmount` 处理生命周期的事件。
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

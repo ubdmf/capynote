@@ -2,7 +2,7 @@
 layout: doc
 title: useTransition - useDeferredValue
 description: useTransition 是 React 中用于管理 UI 中的过渡状态的 Hook。useDeferredValue 是 React 中用于延迟某些状态的更新，直到主渲染任务完成。
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

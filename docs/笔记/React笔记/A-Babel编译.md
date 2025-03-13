@@ -2,7 +2,7 @@
 layout: doc
 title: Babel 和 SWC
 description: 了解 Babel 和 SWC 的工作原理及其区别
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

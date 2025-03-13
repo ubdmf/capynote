@@ -2,7 +2,8 @@
 layout: doc
 title: capynote 文本编辑规则 - AI 使用
 description: capynote 是一个基于 vitepress 的文档管理工具，可以方便的创建和管理文档。
-data: 2025-03-06
+date: 2025-03-06
+type: recommendation
 head:
   - - meta
     - name: keywords

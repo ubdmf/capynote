@@ -2,7 +2,7 @@
 layout: doc
 title: 动手学深度学习 Road Map
 description: 动手学深度学习 Road Map
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

@@ -2,7 +2,7 @@
 layout: doc
 title: React 启动！
 description: Vite 构建的 React 项目结构和说明
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

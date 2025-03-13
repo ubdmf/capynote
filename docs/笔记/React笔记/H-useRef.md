@@ -2,7 +2,7 @@
 layout: doc
 title: useRef
 description: useRef 是 React 中用于处理 DOM 元素或在组件渲染之间保持持久性数据的 Hook。
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

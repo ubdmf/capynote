@@ -2,7 +2,7 @@
 layout: doc
 title: useContext
 description: useContext 是 React 中用于处理上下文数据的钩子，可以方便地在组件树间传递数据。
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

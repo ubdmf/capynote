@@ -2,7 +2,7 @@
 layout: doc
 title: Fork 仓库分支同步
 description: 学习如何将原始仓库的新分支同步到自己fork的仓库中，包含完整的Git命令步骤指南
-data: "2025-03-05"
+date: "2025-03-05"
 head:
   - - meta
     - name: keywords

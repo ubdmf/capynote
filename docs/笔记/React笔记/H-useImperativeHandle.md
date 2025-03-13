@@ -2,7 +2,7 @@
 layout: doc
 title: useImperativeHandle
 description: useImperativeHandle 是 React 中用于处理子组件暴露给父组件的钩子，可以方便地在子组件内部暴露给父组件，句柄父组件可以调子组件的方法，或者访问子组件的属性。如果你学过 Vue，就类似于 Vue 的 `defineExpose`。
-data: 2025-03-06
+date: 2025-03-06
 head:
   - - meta
     - name: keywords

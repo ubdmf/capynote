@@ -2,7 +2,7 @@
 layout: doc
 title: React 原理
 description: React 原理
-data: 2025-03-07
+date: 2025-03-07
 head:
   - - meta
     - name: keywords
